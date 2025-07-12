@@ -14,9 +14,10 @@ PHONE = 8
 
 def sync():
 	print("logging in...")
-	client = FrappeClient("https://xxx.frappecloud.com", "xxx", "xxx")
+	client = FrappeClient("http://site1.localhost:8000")
+	client.authenticate("94c9529d08c0366", "062d009546bdc82")
 
-	with open("jobs.csv", "rU") as jobsfile:
+	with open("jobs.csv", "r", newline='') as jobsfile:
 		reader = csv.reader(jobsfile, dialect='excel')
 		for row in reader:
 			if row[0]=="Timestamp":
@@ -38,7 +39,7 @@ def sync():
 			doc["links"] = row[LINKS]
 			doc["phone_number"] = row[PHONE]
 			if doc.get("status") != "Rejected":
-				doc["status"] = "Filled Form"
+				doc["status"] = "Open"
 
 			if name:
 				client.update(doc)

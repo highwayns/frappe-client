@@ -3,7 +3,7 @@ import unittest
 from frappeclient import FrappeClient
 
 test_config = dict(
-	url = 'http://frappe.local:8000',
+	url = 'http://site1.localhost:8000',
 	username = 'Administrator',
 	password = 'admin'
 )

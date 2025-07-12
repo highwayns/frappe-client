@@ -1,0 +1,4 @@
+Timestamp,Position,Name,Email,Introduction,Thoughts on Company,Likes,Links,Phone
+2025-07-12 10:00:00,AI工程师,田中太郎,test1@example.com,我喜欢编程和数据科学,贵公司专注于人工智能让我很感兴趣,学习氛围好,https://github.com/tanaka,080-1234-5678
+2025-07-12 10:01:00,后端开发,佐藤花子,test2@example.com,我毕业于东京大学,公司产品有社会价值,文化氛围自由,https://linkedin.com/in/hanako,080-2345-6789
+2025-07-12 10:02:00,数据分析,山田一郎,test3@example.com,热衷于AI模型优化,技术挑战性大,技术团队实力强,https://twitter.com/ichiro,080-3456-7890
